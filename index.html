@@ -9,15 +9,16 @@
 <body>
     <script>
         let acumulador = 0;
-        while (acumulador < 1000000) {
-            alert('¿Me das un eurillo?')
+        while (acumulador < 50) {
+            confirm('¿Me das un eurillo?')
             const x = Math.floor(Math.random() * window.innerWidth);
             const y = Math.floor(Math.random() * window.innerHeight);
-            const popup = window.open("", "", `width=200,height=200,left=${x},top=${y}`);
-            popup.document.write('<img src="petirrojocani.png" alt="Imagen">');
+            const popup = window.open("", "", `width=200,height=300,left=${x},top=${y}`);
+            popup.document.write('<img src="frailecillo.png" alt="Imagen">');
             acumulador++;
             popup.focus();
         }
+        alert(Grasias)
     </script>
     
 </body>
